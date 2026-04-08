@@ -1,0 +1,17 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  # This is the url to zip  file containing data
+  source_URL: "https://github.com/krishnaik06/datasets/blob/main/winequality-data.zip?raw=true"
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv
+  # schema_file_path: schema.yaml
+
