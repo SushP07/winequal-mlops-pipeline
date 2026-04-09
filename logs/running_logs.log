@@ -95,3 +95,80 @@ x==========x
 [2026-04-08 22:07:23,589]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
 
 x==========x
+[2026-04-09 22:25:25,782]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-09 22:25:25,794]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-09 22:25:25,796]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-09 22:25:25,798]: INFO: common: Created directory at: artifacts
+[2026-04-09 22:25:25,799]: INFO: common: Created directory at: artifacts/data_transformation
+[2026-04-09 22:25:25,917]: INFO: 1947449372: Splitted data into training and test sets
+[2026-04-09 22:25:25,919]: INFO: 1947449372: (1199, 12)
+[2026-04-09 22:25:25,920]: INFO: 1947449372: (400, 12)
+[2026-04-09 22:41:30,299]: INFO: main: Welcome to our wine quality mlops pipeline
+[2026-04-09 22:41:30,299]: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-04-09 22:41:30,302]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-09 22:41:30,302]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-09 22:41:30,304]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-09 22:41:30,304]: INFO: common: Created directory at: artifacts
+[2026-04-09 22:41:30,304]: INFO: common: Created directory at: artifacts/data_ingestion
+[2026-04-09 22:41:30,305]: INFO: data_ingestion: File already exists of size: 23329 bytes
+[2026-04-09 22:41:30,349]: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-04-09 22:41:30,349]: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<
+[2026-04-09 22:41:30,351]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-09 22:41:30,351]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-09 22:41:30,353]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-09 22:41:30,354]: INFO: common: Created directory at: artifacts
+[2026-04-09 22:41:30,354]: INFO: common: Created directory at: artifacts/data_validation
+[2026-04-09 22:41:30,369]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x
+[2026-04-09 22:41:30,369]: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<
+[2026-04-09 22:41:30,369]: ERROR: data_transformation_pipeline: [Errno 2] No such file or directory: 'artifacts/data_validation/STATUS_FILE.txt'
+Traceback (most recent call last):
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\pipeline\data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    with open("artifacts/data_validation/STATUS_FILE.txt", "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_validation/STATUS_FILE.txt'
+[2026-04-09 22:41:30,371]: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_validation/STATUS_FILE.txt'
+Traceback (most recent call last):
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\main.py", line 35, in <module>
+    data_transformation.initiate_data_transformation()
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\pipeline\data_transformation_pipeline.py", line 26, in initiate_data_transformation
+    raise e
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\pipeline\data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    with open("artifacts/data_validation/STATUS_FILE.txt", "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_validation/STATUS_FILE.txt'
+[2026-04-09 22:42:21,140]: INFO: main: Welcome to our wine quality mlops pipeline
+[2026-04-09 22:42:21,140]: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-04-09 22:42:21,141]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-09 22:42:21,142]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-09 22:42:21,144]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-09 22:42:21,144]: INFO: common: Created directory at: artifacts
+[2026-04-09 22:42:21,145]: INFO: common: Created directory at: artifacts/data_ingestion
+[2026-04-09 22:42:21,145]: INFO: data_ingestion: File already exists of size: 23329 bytes
+[2026-04-09 22:42:21,148]: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-04-09 22:42:21,148]: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<
+[2026-04-09 22:42:21,149]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-09 22:42:21,150]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-09 22:42:21,151]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-09 22:42:21,151]: INFO: common: Created directory at: artifacts
+[2026-04-09 22:42:21,152]: INFO: common: Created directory at: artifacts/data_validation
+[2026-04-09 22:42:21,168]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x
+[2026-04-09 22:42:21,168]: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<
+[2026-04-09 22:42:21,177]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-09 22:42:21,178]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-09 22:42:21,179]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-09 22:42:21,180]: INFO: common: Created directory at: artifacts
+[2026-04-09 22:42:21,180]: INFO: common: Created directory at: artifacts/data_transformation
+[2026-04-09 22:42:21,196]: INFO: data_transformation: Splitted data into training and test sets
+[2026-04-09 22:42:21,197]: INFO: data_transformation: (1199, 12)
+[2026-04-09 22:42:21,197]: INFO: data_transformation: (400, 12)
+[2026-04-09 22:42:21,197]: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x
