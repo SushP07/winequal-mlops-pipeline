@@ -172,3 +172,308 @@ x==========x
 [2026-04-09 22:42:21,197]: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
 
 x==========x
+[2026-04-10 21:01:25,012]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:01:25,073]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:01:25,078]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:01:25,085]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:01:25,085]: ERROR: 1974921851: "'ConfigBox' object has no attribute 'name'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\1974921851.py", line 3, in <module>
+    model_trainer_config = config_manager.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\3296441342.py", line 26, in get_model_trainer_config
+    target_column = schema.name
+                    ^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+[2026-04-10 21:03:46,701]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:03:46,708]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:03:46,708]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:03:46,718]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:03:46,720]: ERROR: 1974921851: "'ConfigBox' object has no attribute 'name'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\1974921851.py", line 3, in <module>
+    model_trainer_config = config_manager.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\3296441342.py", line 26, in get_model_trainer_config
+    target_column = schema.name
+                    ^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+[2026-04-10 21:30:00,675]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:30:00,678]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:30:00,692]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:30:00,694]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:30:00,696]: INFO: 863233799: Loading training data
+[2026-04-10 21:30:00,898]: INFO: 863233799: Splitting data into features and target
+[2026-04-10 21:30:01,018]: INFO: 863233799: Initializing the ElasticNet model
+[2026-04-10 21:30:01,019]: ERROR: 1974921851: 'ModelTrainerConfig' object has no attribute 'l1_ratio'
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\1974921851.py", line 5, in <module>
+    model_trainer.train()
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\863233799.py", line 17, in train
+    lr = ElasticNet(alpha=self.config.alpha, l1_ratio=self.config.l1_ratio, random_state=42)
+                                                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelTrainerConfig' object has no attribute 'l1_ratio'. Did you mean: 'l1_rati0'?
+[2026-04-10 21:32:45,887]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:32:45,889]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:32:45,891]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:32:45,892]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:32:45,893]: INFO: common: Created directory at: artifacts/model_trainer
+[2026-04-10 21:32:45,894]: ERROR: 1974921851: "'ConfigBox' object has no attribute 'model_name'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'. Did you mean: 'model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'. Did you mean: 'model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\1974921851.py", line 3, in <module>
+    model_trainer_config = config_manager.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_22324\150483734.py", line 25, in get_model_trainer_config
+    model_name = config.model_name,
+                 ^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'". Did you mean: 'model_path'?
+[2026-04-10 21:34:31,391]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:34:31,393]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:34:31,394]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:34:31,396]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:34:31,397]: INFO: common: Created directory at: artifacts/model_trainer
+[2026-04-10 21:34:31,398]: INFO: 863233799: Loading training data
+[2026-04-10 21:34:31,404]: INFO: 863233799: Splitting data into features and target
+[2026-04-10 21:34:31,406]: INFO: 863233799: Initializing the ElasticNet model
+[2026-04-10 21:34:31,407]: INFO: 863233799: Training the model
+[2026-04-10 21:34:31,517]: INFO: 863233799: Saving the trained model
+[2026-04-10 21:42:46,818]: INFO: main: Welcome to our wine quality mlops pipeline
+[2026-04-10 21:42:46,818]: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-04-10 21:42:46,820]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:42:46,821]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:42:46,822]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:42:46,822]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:42:46,822]: INFO: common: Created directory at: artifacts/data_ingestion
+[2026-04-10 21:42:46,823]: INFO: data_ingestion: File already exists of size: 23329 bytes
+[2026-04-10 21:42:46,844]: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-04-10 21:42:46,845]: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<
+[2026-04-10 21:42:46,846]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:42:46,847]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:42:46,848]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:42:46,848]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:42:46,848]: INFO: common: Created directory at: artifacts/data_validation
+[2026-04-10 21:42:46,861]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 21:42:46,862]: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<
+[2026-04-10 21:42:46,864]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:42:46,865]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:42:46,866]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:42:46,866]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:42:46,866]: INFO: common: Created directory at: artifacts/data_transformation
+[2026-04-10 21:42:46,936]: INFO: data_transformation: Splitted data into training and test sets
+[2026-04-10 21:42:46,936]: INFO: data_transformation: (1199, 12)
+[2026-04-10 21:42:46,936]: INFO: data_transformation: (400, 12)
+[2026-04-10 21:42:46,936]: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 21:42:46,937]: INFO: main: >>>>>> stage Model Trainer Stage started <<<<<<
+[2026-04-10 21:42:46,938]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:42:46,939]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:42:46,940]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:42:46,941]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:42:46,941]: INFO: common: Created directory at: artifacts/model_trainer
+[2026-04-10 21:42:46,941]: INFO: model_trainer: Loading training data
+[2026-04-10 21:42:46,971]: INFO: model_trainer: Splitting data into features and target
+[2026-04-10 21:42:46,973]: INFO: model_trainer: Initializing the ElasticNet model
+[2026-04-10 21:42:46,973]: INFO: model_trainer: Training the model
+[2026-04-10 21:42:46,975]: INFO: model_trainer: Saving the trained model
+[2026-04-10 21:42:46,975]: ERROR: main: name 'os' is not defined
+Traceback (most recent call last):
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\main.py", line 45, in <module>
+    model_trainer.initiate_model_trainer()
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\pipeline\model_trainer_pipeline.py", line 15, in initiate_model_trainer
+    model_trainer.train()
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\components\model_trainer.py", line 33, in train
+    joblib.dump(lr, os.path.join(self.config.root_dir, self.config.model_name))
+                    ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+[2026-04-10 21:43:41,652]: INFO: main: Welcome to our wine quality mlops pipeline
+[2026-04-10 21:43:41,652]: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-04-10 21:43:41,652]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:43:41,652]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:43:41,652]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:43:41,652]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:43:41,652]: INFO: common: Created directory at: artifacts/data_ingestion
+[2026-04-10 21:43:41,652]: INFO: data_ingestion: File already exists of size: 23329 bytes
+[2026-04-10 21:43:41,652]: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-04-10 21:43:41,652]: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<
+[2026-04-10 21:43:41,652]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:43:41,667]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:43:41,668]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:43:41,669]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:43:41,669]: INFO: common: Created directory at: artifacts/data_validation
+[2026-04-10 21:43:41,686]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 21:43:41,686]: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<
+[2026-04-10 21:43:41,688]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:43:41,689]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:43:41,690]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:43:41,690]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:43:41,691]: INFO: common: Created directory at: artifacts/data_transformation
+[2026-04-10 21:43:41,705]: INFO: data_transformation: Splitted data into training and test sets
+[2026-04-10 21:43:41,706]: INFO: data_transformation: (1199, 12)
+[2026-04-10 21:43:41,706]: INFO: data_transformation: (400, 12)
+[2026-04-10 21:43:41,707]: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 21:43:41,707]: INFO: main: >>>>>> stage Model Trainer Stage started <<<<<<
+[2026-04-10 21:43:41,707]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 21:43:41,709]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 21:43:41,709]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 21:43:41,710]: INFO: common: Created directory at: artifacts
+[2026-04-10 21:43:41,710]: INFO: common: Created directory at: artifacts/model_trainer
+[2026-04-10 21:43:41,710]: INFO: model_trainer: Loading training data
+[2026-04-10 21:43:41,737]: INFO: model_trainer: Splitting data into features and target
+[2026-04-10 21:43:41,738]: INFO: model_trainer: Initializing the ElasticNet model
+[2026-04-10 21:43:41,739]: INFO: model_trainer: Training the model
+[2026-04-10 21:43:41,740]: INFO: model_trainer: Saving the trained model
+[2026-04-10 21:43:41,742]: INFO: main: >>>>>> stage Model Trainer Stage completed <<<<<<
+
+x==========x
