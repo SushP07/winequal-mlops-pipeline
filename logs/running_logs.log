@@ -477,3 +477,254 @@ x==========x
 [2026-04-10 21:43:41,742]: INFO: main: >>>>>> stage Model Trainer Stage completed <<<<<<
 
 x==========x
+[2026-04-10 22:22:05,619]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:22:05,630]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:22:05,644]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:22:05,646]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:22:05,647]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 22:22:05,687]: ERROR: 1046268099: 'DataFrame' object has no attribute 'data'
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\1046268099.py", line 5, in <module>
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\3125343650.py", line 16, in log_into_mlflow
+    test_x = test_data.data.drop(self.config.target_column, axis=1)
+             ^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\generic.py", line 6321, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'data'. Did you mean: '_data'?
+[2026-04-10 22:27:50,141]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:27:50,143]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:27:50,146]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:27:50,147]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:27:50,148]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 22:27:50,176]: ERROR: 1046268099: "['name'] not found in axis"
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\1046268099.py", line 5, in <module>
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\2806146853.py", line 16, in log_into_mlflow
+    test_x = test_data.drop(self.config.target_column, axis=1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\frame.py", line 5603, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\generic.py", line 4810, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\generic.py", line 4852, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\indexes\base.py", line 7136, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: "['name'] not found in axis"
+[2026-04-10 22:28:36,577]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:28:36,580]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:28:36,582]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:28:36,583]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:28:36,584]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 22:28:36,588]: ERROR: 1046268099: unhashable type: "Box"
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\1046268099.py", line 5, in <module>
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\3132422248.py", line 16, in log_into_mlflow
+    test_x = test_data.drop([self.config.target_column], axis=1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\frame.py", line 5603, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\generic.py", line 4810, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\generic.py", line 4852, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\indexes\base.py", line 7132, in drop
+    indexer = self.get_indexer_for(labels)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6194, in get_indexer_for
+    return self.get_indexer(target)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3960, in get_indexer
+    return self._get_indexer(target, method, limit, tolerance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3987, in _get_indexer
+    indexer = self._engine.get_indexer(tgt_values)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 351, in pandas._libs.index.IndexEngine.get_indexer
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7139, in pandas._libs.hashtable.PyObjectHashTable.lookup
+  File "box/box.py", line 388, in box.box.Box.__hash__
+box.exceptions.BoxTypeError: unhashable type: "Box"
+[2026-04-10 22:34:55,965]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:34:55,967]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:34:55,969]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:34:55,970]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:34:55,971]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 22:34:58,877]: INFO: common: JSON file saved at: artifacts\model_evaluation\metrics.json
+[2026-04-10 22:34:59,869]: ERROR: 1046268099: 'str' object has no attribute 'items'
+Traceback (most recent call last):
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\1046268099.py", line 5, in <module>
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\spakh\AppData\Local\Temp\ipykernel_16444\3132422248.py", line 39, in log_into_mlflow
+    mlflow.log_metrics("rmse",rmse)
+  File "d:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\tracking\fluent.py", line 1239, in log_metrics
+    for key, value in metrics.items()
+                      ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'items'
+[2026-04-10 22:36:07,614]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:36:07,616]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:36:07,618]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:36:07,619]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:36:07,620]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 22:36:08,032]: INFO: common: JSON file saved at: artifacts\model_evaluation\metrics.json
+[2026-04-10 22:53:05,326]: INFO: main: Welcome to our wine quality mlops pipeline
+[2026-04-10 22:53:05,328]: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-04-10 22:53:05,329]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:53:05,330]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:53:05,331]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:53:05,331]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:53:05,332]: INFO: common: Created directory at: artifacts/data_ingestion
+[2026-04-10 22:53:05,332]: INFO: data_ingestion: File already exists of size: 23329 bytes
+[2026-04-10 22:53:05,348]: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-04-10 22:53:05,349]: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<
+[2026-04-10 22:53:05,350]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:53:05,351]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:53:05,352]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:53:05,353]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:53:05,353]: INFO: common: Created directory at: artifacts/data_validation
+[2026-04-10 22:53:05,370]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 22:53:05,371]: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<
+[2026-04-10 22:53:05,380]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:53:05,381]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:53:05,382]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:53:05,382]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:53:05,383]: INFO: common: Created directory at: artifacts/data_transformation
+[2026-04-10 22:53:05,398]: INFO: data_transformation: Splitted data into training and test sets
+[2026-04-10 22:53:05,398]: INFO: data_transformation: (1199, 12)
+[2026-04-10 22:53:05,398]: INFO: data_transformation: (400, 12)
+[2026-04-10 22:53:05,399]: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 22:53:05,399]: INFO: main: >>>>>> stage Model Trainer Stage started <<<<<<
+[2026-04-10 22:53:05,400]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:53:05,401]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:53:05,402]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:53:05,402]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:53:05,403]: INFO: common: Created directory at: artifacts/model_trainer
+[2026-04-10 22:53:05,403]: INFO: model_trainer: Loading training data
+[2026-04-10 22:53:05,426]: INFO: model_trainer: Splitting data into features and target
+[2026-04-10 22:53:05,427]: INFO: model_trainer: Initializing the ElasticNet model
+[2026-04-10 22:53:05,427]: INFO: model_trainer: Training the model
+[2026-04-10 22:53:05,429]: INFO: model_trainer: Saving the trained model
+[2026-04-10 22:53:05,431]: INFO: main: >>>>>> stage Model Trainer Stage completed <<<<<<
+
+x==========x
+[2026-04-10 22:53:05,431]: INFO: main: >>>>>> stage Model Evaluation Stage started <<<<<<
+[2026-04-10 22:53:05,434]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 22:53:05,435]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 22:53:05,436]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 22:53:05,437]: INFO: common: Created directory at: artifacts
+[2026-04-10 22:53:05,438]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 22:53:31,371]: INFO: common: JSON file saved at: artifacts\model_evaluation\metrics.json
+[2026-04-10 22:53:40,076]: ERROR: main: API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 403 != 200. Response body: ''
+Traceback (most recent call last):
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\main.py", line 56, in <module>
+    model_evaluation.initiate_model_evaluation()
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\pipeline\model_evaluation_pipeline.py", line 14, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\src\winequal_mlops_pipeline\components\model_evaluation.py", line 67, in log_into_mlflow
+    mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticNet_WineQualityModel")
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\sklearn\__init__.py", line 477, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\models\model.py", line 1357, in log
+    registered_model = mlflow.tracking._model_registry.fluent._register_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\tracking\_model_registry\fluent.py", line 179, in _register_model
+    raise e
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\tracking\_model_registry\fluent.py", line 168, in _register_model
+    create_model_response = client.create_registered_model(name)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\tracking\client.py", line 3995, in create_registered_model
+    return self._get_registry_client().create_registered_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\telemetry\track.py", line 24, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\tracking\_model_registry\client.py", line 96, in create_registered_model
+    return self.store.create_registered_model(name, tags, description, deployment_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\store\model_registry\rest_store.py", line 120, in create_registered_model
+    response_proto = self._call_endpoint(CreateRegisteredModel, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\store\model_registry\rest_store.py", line 68, in _call_endpoint
+    return super()._call_endpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\store\model_registry\base_rest_store.py", line 42, in _call_endpoint
+    return call_endpoint(
+           ^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 627, in call_endpoint
+    response = verify_rest_response(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programs\Projects\MLOps\ML_pipeline\winequal-ml-pipeline\winequal-mlops-pipeline\venv\Lib\site-packages\mlflow\utils\rest_utils.py", line 348, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 403 != 200. Response body: ''
+[2026-04-10 23:01:32,586]: INFO: main: Welcome to our wine quality mlops pipeline
+[2026-04-10 23:01:32,586]: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-04-10 23:01:32,589]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 23:01:32,590]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 23:01:32,591]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 23:01:32,592]: INFO: common: Created directory at: artifacts
+[2026-04-10 23:01:32,592]: INFO: common: Created directory at: artifacts/data_ingestion
+[2026-04-10 23:01:32,592]: INFO: data_ingestion: File already exists of size: 23329 bytes
+[2026-04-10 23:01:32,594]: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-04-10 23:01:32,595]: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<
+[2026-04-10 23:01:32,596]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 23:01:32,597]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 23:01:32,598]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 23:01:32,598]: INFO: common: Created directory at: artifacts
+[2026-04-10 23:01:32,598]: INFO: common: Created directory at: artifacts/data_validation
+[2026-04-10 23:01:32,617]: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 23:01:32,617]: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<
+[2026-04-10 23:01:32,622]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 23:01:32,623]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 23:01:32,625]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 23:01:32,626]: INFO: common: Created directory at: artifacts
+[2026-04-10 23:01:32,626]: INFO: common: Created directory at: artifacts/data_transformation
+[2026-04-10 23:01:32,645]: INFO: data_transformation: Splitted data into training and test sets
+[2026-04-10 23:01:32,646]: INFO: data_transformation: (1199, 12)
+[2026-04-10 23:01:32,646]: INFO: data_transformation: (400, 12)
+[2026-04-10 23:01:32,646]: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x
+[2026-04-10 23:01:32,647]: INFO: main: >>>>>> stage Model Trainer Stage started <<<<<<
+[2026-04-10 23:01:32,648]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 23:01:32,649]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 23:01:32,651]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 23:01:32,651]: INFO: common: Created directory at: artifacts
+[2026-04-10 23:01:32,652]: INFO: common: Created directory at: artifacts/model_trainer
+[2026-04-10 23:01:32,652]: INFO: model_trainer: Loading training data
+[2026-04-10 23:01:32,675]: INFO: model_trainer: Splitting data into features and target
+[2026-04-10 23:01:32,676]: INFO: model_trainer: Initializing the ElasticNet model
+[2026-04-10 23:01:32,676]: INFO: model_trainer: Training the model
+[2026-04-10 23:01:32,678]: INFO: model_trainer: Saving the trained model
+[2026-04-10 23:01:32,680]: INFO: main: >>>>>> stage Model Trainer Stage completed <<<<<<
+
+x==========x
+[2026-04-10 23:01:32,680]: INFO: main: >>>>>> stage Model Evaluation Stage started <<<<<<
+[2026-04-10 23:01:32,682]: INFO: common: yaml file: config\config.yaml loaded successfully
+[2026-04-10 23:01:32,683]: INFO: common: yaml file: params.yaml loaded successfully
+[2026-04-10 23:01:32,684]: INFO: common: yaml file: schema.yaml loaded successfully
+[2026-04-10 23:01:32,686]: INFO: common: Created directory at: artifacts
+[2026-04-10 23:01:32,686]: INFO: common: Created directory at: artifacts/model_evaluation
+[2026-04-10 23:01:35,988]: INFO: common: JSON file saved at: artifacts\model_evaluation\metrics.json
+[2026-04-10 23:01:51,241]: INFO: main: >>>>>> stage Model Evaluation Stage completed <<<<<<
+
+x==========x
