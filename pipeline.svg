@@ -1,0 +1,59 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa" />
+  
+  <!-- Definitions for arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Modules (Nodes) -->
+  <g font-family="Arial, sans-serif" font-size="14" text-anchor="middle">
+    <!-- Data Ingestion -->
+    <rect x="50" y="50" width="150" height="50" rx="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+    <text x="125" y="80">data_ingestion.py</text>
+
+    <!-- Data Validation -->
+    <rect x="50" y="150" width="150" height="50" rx="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+    <text x="125" y="180">data_validation.py</text>
+
+    <!-- Data Transformation -->
+    <rect x="50" y="250" width="150" height="50" rx="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+    <text x="125" y="280">data_transformation.py</text>
+
+    <!-- Model Trainer -->
+    <rect x="50" y="350" width="150" height="50" rx="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+    <text x="125" y="380">model_trainer.py</text>
+
+    <!-- Model Evaluation -->
+    <rect x="50" y="450" width="150" height="50" rx="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+    <text x="125" y="480">model_evaluation.py</text>
+
+    <!-- Artifacts/Storage -->
+    <rect x="350" y="250" width="120" height="100" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+    <text x="410" y="305">Artifacts</text>
+  </g>
+
+  <!-- Connections (Arrows) -->
+  <g fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)">
+    <!-- Vertical flow -->
+    <line x1="125" y1="100" x2="125" y2="140" />
+    <line x1="125" y1="200" x2="125" y2="240" />
+    <line x1="125" y1="300" x2="125" y2="340" />
+    <line x1="125" y1="400" x2="125" y2="440" />
+
+    <!-- Connections to Artifacts -->
+    <path d="M 200 75 L 350 260" stroke-dasharray="5,5" />
+    <path d="M 200 275 L 350 300" stroke-dasharray="5,5" />
+    <path d="M 200 375 L 350 320" stroke-dasharray="5,5" />
+  </g>
+
+  <!-- Labels for Artifacts -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#666">
+    <text x="250" y="160" transform="rotate(50 250,160)">Raw Data</text>
+    <text x="250" y="280">Transformed Data</text>
+    <text x="250" y="360" transform="rotate(-15 250,360)">Trained Model</text>
+  </g>
+</svg>
